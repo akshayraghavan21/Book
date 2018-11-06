@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Bookelp</string>
+    <string name="rate_name">Rate</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string-array name="names">
+        <item>Select Subject by Code</item>
+        <item>ITE1016</item>
+        <item>ITE2016</item>
+        <item>ITE3016</item>
+    </string-array>
+    <string name="fragment1intro">
+        We have all been in a situation of not able to find the best source to prepare for any subject. \nIt is either due to lack of communication or the unique preferences we all have.
+    </string>
+    <string name="localup">Local Upload</string>
+    <string name="nameup">Book name Upload</string>
+    <string name="searchupintro">Pleasure to have your interest in helping \nout your peers!</string>
+    <string name="searchupinst">There are ways you can upload a book or any source\n of Info.
+        \n\t1. You can upload just the name of the book.
+        \n\t2. You can upload the book itself locally.</string>
+    <string name="ratesearchinfo">
+        There are ways to share the book you\n found apt for this subject.
+        \nHere you can browse the book
+        \n or choose among the widely accepted ones.
+    </string>
+    <string name="ratefragintro">Rating a book involves sharing your opinion </string>
+</resources>

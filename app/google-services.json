@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "737031247077",
+    "firebase_url": "https://bookelp-msba.firebaseio.com",
+    "project_id": "bookelp-msba",
+    "storage_bucket": "bookelp-msba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:737031247077:android:c8e9ff27385c587d",
+        "android_client_info": {
+          "package_name": "r.akshay.book"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "737031247077-4r38k9gcfbthrarqpbh5134s7dpj2ldj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "r.akshay.book",
+            "certificate_hash": "e73696881c6fd4658796589436c425ae34dd9ab0"
+          }
+        },
+        {
+          "client_id": "737031247077-fhio485uoj8fm7am5qfmmtlpro1s6pdk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoBmZSzIyANapVB75ANz28nfDcEveJMC8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "737031247077-fhio485uoj8fm7am5qfmmtlpro1s6pdk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
