@@ -84,7 +84,7 @@ public class SearchResult extends AppCompatActivity{
 
             //Changed it for the sake of Firebase
             Query query = FirebaseDatabase.getInstance().getReference("/RateRecyclerview/").orderByChild("id").equalTo("ITE1016");
-            query.addValueEventListener(new ValueEventListener() {
+            query.addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     Log.d(TAG, "onDataChange: Hmm "+ dataSnapshot.getChildrenCount());

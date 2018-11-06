@@ -13,12 +13,6 @@ public class dataofbooks {
         this.rating = rating;
         this.image = image;
     }
-//    public dataofbooks(int id, String title, String shortdesc, double rating) {
-//        this.id = id;
-//        this.title = title;
-//        this.shortdesc = shortdesc;
-//        this.rating = rating;
-//    }
 
     public String getId() {
         return id;

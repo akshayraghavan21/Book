@@ -134,12 +134,12 @@ public class RateFragment1 extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
 
         dataofbooksList = new ArrayList<>();
-//        dataofbooksList.add(new dataofbooks(1016, "W3 Resources", "This is really good for hands on experience", 4, R.drawable.w3));
-//        dataofbooksList.add(new dataofbooks(1016, "O'Rielly", "This is really good for business aspect of MAD", 4.3, R.drawable.bestbrielly));
-//        dataofbooksList.add(new dataofbooks(1016, "Android Developers", "Detailed, but bad for beginners", 4.9, R.drawable.androiddev));
-//        dataofbooksList.add(new dataofbooks(1016, "Building iPhone Apps with HTML, CSS and JavaScript", "Detailed, but bad for beginners", 2.9, R.drawable.iphoneappsorielly));
-//        dataofbooksList.add(new dataofbooks(1016, "Android for programmers", "Detailed, but bad for beginners", 1.9, R.drawable.aforbeginners));
-//        dataofbooksList.add(new dataofbooks(1016, "Guide for iOS-Apple developers", "Detailed, but bad for beginners", 2.5, R.drawable.iosdev));
+        dataofbooksList.add(new dataofbooks("ITE1016", "W3 Resources", "This is really good for hands on experience", 4, R.drawable.w3));
+        dataofbooksList.add(new dataofbooks("ITE1016", "O'Rielly", "This is really good for business aspect of MAD", 4.3, R.drawable.bestbrielly));
+        dataofbooksList.add(new dataofbooks("ITE1016", "Android Developers", "Detailed, but bad for beginners", 4.9, R.drawable.androiddev));
+        dataofbooksList.add(new dataofbooks("ITE1016", "Building iPhone Apps with HTML, CSS and JavaScript", "Detailed, but bad for beginners", 2.9, R.drawable.iphoneappsorielly));
+        dataofbooksList.add(new dataofbooks("ITE1016", "Android for programmers", "Detailed, but bad for beginners", 1.9, R.drawable.aforbeginners));
+        dataofbooksList.add(new dataofbooks("ITE1016", "Guide for iOS-Apple developers", "Detailed, but bad for beginners", 2.5, R.drawable.iosdev));
 
         SearchProductAdapter adapter = new SearchProductAdapter(getActivity(), dataofbooksList);
         recyclerView.setAdapter(adapter);
