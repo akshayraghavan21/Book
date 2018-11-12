@@ -9,13 +9,9 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.LinearLayout;
-import android.widget.Spinner;
-import android.widget.Toast;
-import android.view.Menu;
+import android.widget.TextView;
 import android.view.MenuItem;
 
 public class RateFragment2 extends Fragment {
@@ -23,7 +19,13 @@ public class RateFragment2 extends Fragment {
     private Button btnTEST;
     private String selected;
     //    private Spinner myspinner;
-    FloatingActionButton fupload;
+
+    public static String name;
+    public static void putArgs2(Bundle args){
+        name = args.getString("yay");
+        Log.d(TAG, "Recieving intent from RateResult"+ name);
+    }
+    FloatingActionButton fupload, fLocalUpload, fFabFileUpload;
     private FloatingActionButton upload;
     private LinearLayout layoutFileupload, layoutNameupload;
     private boolean fabExpanded = false;
@@ -33,10 +35,26 @@ public class RateFragment2 extends Fragment {
         View view = inflater.inflate(R.layout.rate_fragment2, container, false);
         btnTEST = (Button) view.findViewById(R.id.buttonf2);
 
+        TextView searchHeading = (TextView) view.findViewById(R.id.textView2);
+        String finalDisplayHead = searchHeading.getText().toString() + " " + name;
+        searchHeading.setText(finalDisplayHead);
+
         Log.d(TAG, "Created Fragment 2: ");
         layoutFileupload = (LinearLayout) view.findViewById(R.id.layoutLocalupload);
         layoutNameupload = (LinearLayout) view.findViewById(R.id.layoutNameOnlyUplaod);
         fupload = (FloatingActionButton) view.findViewById(R.id.fabSetting);
+        fLocalUpload = (FloatingActionButton) view.findViewById(R.id.fablocalupload);
+        fFabFileUpload = (FloatingActionButton) view.findViewById(R.id.fabfileupload);
+        fLocalUpload.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getContext(), BookNameUpload.class);
+                Log.d(TAG, "RateFragment Intent : " + name);
+                intent.putExtra("CourseID", name);
+                startActivity(intent);
+            }
+        });
+
         fupload.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -59,10 +77,9 @@ public class RateFragment2 extends Fragment {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_upload) {
             return true;
         }
-
         return super.onOptionsItemSelected(item);
     }
 
@@ -77,6 +94,7 @@ public class RateFragment2 extends Fragment {
     private void openSubMenusFab() {
         layoutFileupload.setVisibility(View.VISIBLE);
         layoutNameupload.setVisibility(View.VISIBLE);
+
         //Change settings icon to 'X' icon
         fupload.setImageResource(R.drawable.ic_clear_black_24dp);
         fabExpanded = true;

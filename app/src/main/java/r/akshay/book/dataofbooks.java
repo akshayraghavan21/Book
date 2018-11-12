@@ -5,8 +5,9 @@ public class dataofbooks {
     private String title;
     private String shortdesc;
     private double rating;
-    private int image;
-    public dataofbooks(String id, String title, String shortdesc, double rating, int image) {
+    private String image;
+    public dataofbooks(){}
+    public dataofbooks(String id, String title, String shortdesc, double rating, String image) {
         this.id = id;
         this.title = title;
         this.shortdesc = shortdesc;
@@ -29,7 +30,7 @@ public class dataofbooks {
     public double getRating() {
         return rating;
     }
-    public int getImage() {
+    public String getImage() {
         return image;
     }
 }

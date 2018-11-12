@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.os.Parcelable;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,8 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 import java.util.Objects;
+
+import static android.support.constraint.Constraints.TAG;
 
 public class SearchProductAdapter extends RecyclerView.Adapter<SearchProductAdapter.ProductViewHolder> {
     private Context mCtx;
@@ -79,14 +82,28 @@ public class SearchProductAdapter extends RecyclerView.Adapter<SearchProductAdap
             if (position != RecyclerView.NO_POSITION) { // Check if an item was deleted, but the user clicked it before the UI removed it
 //                    User user = users.get(position);
                 // We can access the data within the views
+                if(mCtx instanceof SearchResult){
+                Log.d(TAG, "onClick: Going to display from SearchResult activity");
                 Toast.makeText(mCtx, textViewTitle.getText(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(mCtx, list.class);
                 intent.putExtra("TB name", textViewTitle.getText());
-                intent.putExtra("TB rating", textViewRating.getRating());
-//                intent.putExtra("img", (Parcelable) dataofbooksList.get(position));
-                intent.putExtra("TB desc", textViewShortDesc.getText());
+//                intent.putExtra("TB rating", textViewRating.getRating());
+////                intent.putExtra("img", (Parcelable) dataofbooksList.get(position));
+//                intent.putExtra("TB desc", textViewShortDesc.getText());
                 mCtx.startActivity(intent);
             }
+            else if(mCtx instanceof RateResult){
+                    Log.d(TAG, "onClick: Going to display from SearchResult activity");
+                    Toast.makeText(mCtx, textViewTitle.getText(), Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(mCtx, RateList.class);
+                    intent.putExtra("TB name", textViewTitle.getText());
+                    intent.putExtra("Activity", "SearchProduct");
+//                intent.putExtra("TB rating", textViewRating.getRating());
+////                intent.putExtra("img", (Parcelable) dataofbooksList.get(position));
+//                intent.putExtra("TB desc", textViewShortDesc.getText());
+                    mCtx.startActivity(intent);
+                }
+        }
         }
     }
 }

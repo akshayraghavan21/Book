@@ -5,5 +5,13 @@
     <color name="colorAccent">#FF4081</color>
     <color name="searchback">#e6b9b9</color>
     <color name="searchcard">#dbecc8</color>
+    <color name="list">#f2d89a</color>
+    <color name="text">#c1ffef</color>
+    <color name="text2">#e8d3fc</color>
+    <color name="text3">#f1fcae</color>
+
+
+
+
 
 </resources>

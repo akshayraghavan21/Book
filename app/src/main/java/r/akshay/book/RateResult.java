@@ -24,7 +24,10 @@ public class RateResult extends AppCompatActivity {
 
         Log.d(TAG, "onCreate: Receiving intent."+ selected);
 
-        RateFragment1 fragment = RateFragment1.newInstance(selected);
+        Bundle args = new Bundle();
+        args.putString("yay", selected);
+        RateFragment1.putArgs(args);
+        RateFragment2.putArgs2(args);
 
         rSectionsPageAdapter = new SectionsPageAdapter(getSupportFragmentManager());
 

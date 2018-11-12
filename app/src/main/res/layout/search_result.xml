@@ -18,120 +18,120 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <FrameLayout
-        android:layout_width="217dp"
-        android:layout_height="249dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.947"
-        app:layout_constraintStart_toStartOf="parent">
+    <!--<FrameLayout-->
+        <!--android:layout_width="217dp"-->
+        <!--android:layout_height="249dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginEnd="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintHorizontal_bias="0.947"-->
+        <!--app:layout_constraintStart_toStartOf="parent">-->
 
-        <LinearLayout
-            android:id="@+id/layoutLocalupload"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginBottom="90dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/layoutLocalupload"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:layout_marginBottom="90dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
 
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/cardview_light_background"
-                app:cardUseCompatPadding="true"
-                tools:ignore="PrivateResource">
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:cardBackgroundColor="@color/cardview_light_background"-->
+                <!--app:cardUseCompatPadding="true"-->
+                <!--tools:ignore="PrivateResource">-->
 
-                <TextView
-                    android:id="@+id/txtlocalupload"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="@dimen/activity_horizontal_margin"
-                    android:paddingLeft="@dimen/activity_horizontal_margin"
-                    android:paddingRight="@dimen/activity_horizontal_margin"
-                    android:paddingTop="@dimen/activity_horizontal_margin"
-                    android:text="@string/localup"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textStyle="bold" />
-            </android.support.v7.widget.CardView>
+                <!--<TextView-->
+                    <!--android:id="@+id/txtlocalupload"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingBottom="@dimen/activity_horizontal_margin"-->
+                    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                    <!--android:paddingTop="@dimen/activity_horizontal_margin"-->
+                    <!--android:text="@string/localup"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                    <!--android:textStyle="bold" />-->
+            <!--</android.support.v7.widget.CardView>-->
 
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fablocalupload"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_file_upload_black_24dp"
-                app:backgroundTint="@android:color/holo_blue_bright"
-                app:fabSize="mini" />
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/fablocalupload"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_file_upload_black_24dp"-->
+                <!--app:backgroundTint="@android:color/holo_blue_bright"-->
+                <!--app:fabSize="mini" />-->
 
-        </LinearLayout>
+        <!--</LinearLayout>-->
 
-        <LinearLayout
-            android:id="@+id/layoutNameOnlyUplaod"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginBottom="150dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginRight="8dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/layoutNameOnlyUplaod"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:layout_marginBottom="150dp"-->
+            <!--android:layout_marginEnd="8dp"-->
+            <!--android:layout_marginRight="8dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
 
-            <android.support.v7.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@color/cardview_light_background"
-                app:cardUseCompatPadding="true">
+            <!--<android.support.v7.widget.CardView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:cardBackgroundColor="@color/cardview_light_background"-->
+                <!--app:cardUseCompatPadding="true">-->
 
-                <TextView
-                    android:id="@+id/txtfileupload"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="@dimen/activity_horizontal_margin"
-                    android:paddingLeft="@dimen/activity_horizontal_margin"
-                    android:paddingRight="@dimen/activity_horizontal_margin"
-                    android:paddingTop="@dimen/activity_horizontal_margin"
-                    android:text="@string/nameup"
-                    android:textAppearance="?android:attr/textAppearanceSmall"
-                    android:textStyle="bold" />
+                <!--<TextView-->
+                    <!--android:id="@+id/txtfileupload"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingBottom="@dimen/activity_horizontal_margin"-->
+                    <!--android:paddingLeft="@dimen/activity_horizontal_margin"-->
+                    <!--android:paddingRight="@dimen/activity_horizontal_margin"-->
+                    <!--android:paddingTop="@dimen/activity_horizontal_margin"-->
+                    <!--android:text="@string/nameup"-->
+                    <!--android:textAppearance="?android:attr/textAppearanceSmall"-->
+                    <!--android:textStyle="bold" />-->
 
-            </android.support.v7.widget.CardView>
+            <!--</android.support.v7.widget.CardView>-->
 
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fabfileupload"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:src="@drawable/ic_localup_black_24dp"
-                app:backgroundTint="@android:color/holo_blue_bright"
-                app:fabSize="mini" />
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/fabfileupload"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:src="@drawable/ic_localup_black_24dp"-->
+                <!--app:backgroundTint="@android:color/holo_blue_bright"-->
+                <!--app:fabSize="mini" />-->
 
-        </LinearLayout>
+        <!--</LinearLayout>-->
 
-        <LinearLayout
-            android:id="@+id/layoutFabSettings"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_marginBottom="30dp"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+        <!--<LinearLayout-->
+            <!--android:id="@+id/layoutFabSettings"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="bottom|end"-->
+            <!--android:layout_marginBottom="30dp"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:orientation="horizontal">-->
 
-            <android.support.design.widget.FloatingActionButton
-                android:id="@+id/fabSetting"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:src="@drawable/ic_create_black_24dp"
-                app:backgroundTint="#fa6782"
-                app:fabSize="normal" />
-        </LinearLayout>
-    </FrameLayout>
+            <!--<android.support.design.widget.FloatingActionButton-->
+                <!--android:id="@+id/fabSetting"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom|end"-->
+                <!--android:src="@drawable/ic_create_black_24dp"-->
+                <!--app:backgroundTint="#fa6782"-->
+                <!--app:fabSize="normal" />-->
+        <!--</LinearLayout>-->
+    <!--</FrameLayout>-->
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/listv"

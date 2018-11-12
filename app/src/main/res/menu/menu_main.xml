@@ -1,10 +1,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
       xmlns:app="http://schemas.android.com/apk/res-auto"
       xmlns:tools="http://schemas.android.com/tools"
-      tools:context="com.tabian.tabfragments.MainActivity">
+      tools:context=".SearchResult">
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never"/>
+        android:id="@+id/action_upload"
+        android:icon="@drawable/ic_file_upload_black_24dp"
+        android:title="Upload"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/action_rate"
+        android:icon="@drawable/rate"
+        android:visible="true"
+        android:title="Rate" />
 </menu>

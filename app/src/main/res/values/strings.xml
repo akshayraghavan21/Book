@@ -7,7 +7,7 @@
         <item>Select Subject by Code</item>
         <item>ITE1016</item>
         <item>ITE2016</item>
-        <item>ITE3016</item>
+        <item>ITE4001</item>
     </string-array>
     <string name="fragment1intro">
         We have all been in a situation of not able to find the best source to prepare for any subject. \nIt is either due to lack of communication or the unique preferences we all have.
@@ -24,4 +24,7 @@
         \n or choose among the widely accepted ones.
     </string>
     <string name="ratefragintro">Rating a book involves sharing your opinion </string>
+    <string name="UploadInfo">Not all resources provided here is perfect. \n
+        With the information you are providing, we can confidently tell that it is close to being perfect.
+        \n Please enter the Name of the book, a short description on your opinion of the book, an image of the book, and your rating. \n If possible even the file itself.</string>
 </resources>
