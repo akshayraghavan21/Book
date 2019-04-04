@@ -20,6 +20,9 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -102,6 +105,13 @@ public class list extends AppCompatActivity {
                 intent1.putExtra("Activity", "list");
                 startActivity(intent1);
                 return true;
+            case R.id.logoutmenu:
+                FirebaseAuth.getInstance().signOut();
+                Intent intentexit = new Intent(this,Login.class);
+                intentexit.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intentexit);
+                finish();
+
             default:
                 return super.onOptionsItemSelected(item);
         }

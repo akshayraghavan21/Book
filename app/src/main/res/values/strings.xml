@@ -8,6 +8,7 @@
         <item>ITE1016</item>
         <item>ITE2016</item>
         <item>ITE4001</item>
+        <item>ITE1007</item>
     </string-array>
     <string name="fragment1intro">
         We have all been in a situation of not able to find the best source to prepare for any subject. \nIt is either due to lack of communication or the unique preferences we all have.
@@ -27,4 +28,6 @@
     <string name="UploadInfo">Not all resources provided here is perfect. \n
         With the information you are providing, we can confidently tell that it is close to being perfect.
         \n Please enter the Name of the book, a short description on your opinion of the book, an image of the book, and your rating. \n If possible even the file itself.</string>
+    <string name="don_t_have_account_sign_up">Don\'t have account? Sign Up</string>
+    <string name="password">Password</string>
 </resources>

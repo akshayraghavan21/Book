@@ -16,7 +16,7 @@ import android.widget.Toast;
 public class MainFragment1 extends Fragment {
     private static final String TAG = "Tab1Fragment";
 
-    private Button btnTEST;
+    private Button btnTEST, loginBtn;
 //    private Spinner myspinner;
     public String selected;
 
@@ -46,7 +46,7 @@ public class MainFragment1 extends Fragment {
         btnTEST.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getActivity(), "TESTING BUTTON CLICK 1 "+selected,Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(),selected,Toast.LENGTH_SHORT).show();
 //                Bundle bundle= new Bundle();
 //                bundle.putString("chosen",selected);
 //                MainFragment1 farg= new MainFragment1();
@@ -55,6 +55,13 @@ public class MainFragment1 extends Fragment {
                 startActivity(intent);
             }
         });
+//        loginBtn.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intents=new Intent(getActivity(),Login.class);
+//                startActivity(intents);
+//            }
+//        });
         return view;
     }
 

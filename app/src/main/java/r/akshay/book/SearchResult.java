@@ -32,6 +32,7 @@ import android.widget.RatingBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -146,18 +147,24 @@ public class SearchResult extends AppCompatActivity{
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.menu_main, menu);
+        inflater.inflate(R.menu.menu_main2, menu);
         return true;
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         // Handle item selection
         switch (item.getItemId()) {
-            case R.id.action_upload:
+            case R.id.action_upload2:
                 Intent intent = new Intent(this, RateResult.class);
                 intent.putExtra("chosen",selected);
                 startActivity(intent);
                 return true;
+            case R.id.logoutmenu2:
+                FirebaseAuth.getInstance().signOut();
+                Intent intentexit = new Intent(this,Login.class);
+                intentexit.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intentexit);
+                finish();
             default:
                 return super.onOptionsItemSelected(item);
         }

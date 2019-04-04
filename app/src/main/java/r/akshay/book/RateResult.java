@@ -6,7 +6,12 @@ import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.widget.TextView;
+
+import com.google.firebase.auth.FirebaseAuth;
 
 public class RateResult extends AppCompatActivity {
     private static final String TAG = "MainActivity";
@@ -45,7 +50,24 @@ public class RateResult extends AppCompatActivity {
         adapter.addFragment(new RateFragment2(), "Upload");
         viewPager.setAdapter(adapter);
     }
-//    public String getMyd(){
-//        return selected;
-//    }
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu_logoutonly, menu);
+        return true;
+    }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle item selection
+        switch (item.getItemId()) {
+            case R.id.logoutonly:
+                FirebaseAuth.getInstance().signOut();
+                Intent intentexit = new Intent(this,Login.class);
+                intentexit.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(intentexit);
+                finish();
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
 }

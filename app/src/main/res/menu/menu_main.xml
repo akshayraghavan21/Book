@@ -11,6 +11,11 @@
     <item
         android:id="@+id/action_rate"
         android:icon="@drawable/rate"
+        android:title="Rate"
+        android:visible="true" />
+    <item
+        android:id="@+id/logoutmenu"
+        android:title="Logout"
         android:visible="true"
-        android:title="Rate" />
+        />
 </menu>
